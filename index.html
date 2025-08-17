@@ -1,18 +1,16 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bonabridge — Connecting Global Business</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-  
   <!-- Header -->
-  <header class="navbar" data-aos="fade-down">
+  <header class="navbar reveal">
     <div class="container">
       <div class="logo">Bonabridge</div>
       <nav>
@@ -27,8 +25,8 @@
   </header> 
   
   <!-- Hero Section -->  
-  <section class="hero" id="home">
-    <div class="hero-content" data-aos="zoom-in">
+  <section class="hero reveal" id="home">
+    <div class="hero-content">
       <h1>Bridging Businesses, Building Trust</h1>
       <p>Your reliable B2B intermediary for global digital transactions.</p>
       <a href="#contact" class="btn">Get Started</a>
@@ -36,7 +34,7 @@
   </section>  
   
   <!-- About -->  
-  <section id="about" class="section" data-aos="fade-up">
+  <section id="about" class="section reveal">
     <div class="container">
       <h2>About Bonabridge</h2>
       <p>Bonabridge is a trusted global intermediary platform ensuring smooth, safe, and legitimate connections between businesses. We help organizations find reliable partners, clients, and opportunities while eliminating risks of scams or fraudulent engagements.</p>
@@ -44,19 +42,19 @@
   </section>  
   
   <!-- Services -->  
-  <section id="services" class="section alt" data-aos="fade-up">
+  <section id="services" class="section alt reveal">
     <div class="container">
       <h2>Our Services</h2>
       <div class="cards">
-        <div class="card" data-aos="flip-left">
+        <div class="card reveal">
           <h3>B2B Connections</h3>
           <p>We connect businesses with verified partners globally through a secure process.</p>
         </div>
-        <div class="card" data-aos="flip-left">
+        <div class="card reveal">
           <h3>Transaction Intermediary</h3>
           <p>Ensuring safe transactions and serving as a neutral third-party to build trust.</p>
         </div>
-        <div class="card" data-aos="flip-left">
+        <div class="card reveal">
           <h3>Zoom & Virtual Facilitation</h3>
           <p>We facilitate smooth online meetings between businesses worldwide.</p>
         </div>
@@ -65,7 +63,7 @@
   </section>  
   
   <!-- Trust Section -->  
-  <section id="trust" class="section" data-aos="fade-up">
+  <section id="trust" class="section reveal">
     <div class="container">
       <h2>Why Trust Us?</h2>
       <ul class="trust-list">
@@ -78,7 +76,7 @@
   </section>  
   
   <!-- Contact -->  
-  <section id="contact" class="section alt" data-aos="fade-up">
+  <section id="contact" class="section alt reveal">
     <div class="container">
       <h2>Contact Us</h2>
       <form id="contactForm">
@@ -91,10 +89,14 @@
   </section>  
   
   <!-- Footer -->  
-  <footer class="footer" data-aos="fade-up">
+  <footer class="footer reveal">
     <p>© <span id="year"></span> Bonabridge. All Rights Reserved.</p>
-  </footer>  <script src="script.js"></script>  <script>
-    AOS.init({ duration: 1200, once: true });
+  </footer>  
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-  </script></body>
+  </script>
+</body>
 </html>
